@@ -2,8 +2,9 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { createEmployeeAsync } from '../../reducers/EmployeeReducer';
 import Modal from 'react-modal';
+import { CreateEmployeeModalProps } from '../../Types';
 
-const CreateEmployeeModal = (closeModal: () => void, modalIsOpen: any) => {
+const CreateEmployeeModal = ({closeModal, modalIsOpen} : CreateEmployeeModalProps) => {
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [emailId, setEmailId] = useState('');

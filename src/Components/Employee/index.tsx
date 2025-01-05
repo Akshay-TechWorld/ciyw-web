@@ -1,5 +1,5 @@
 import { AgGridReact } from 'ag-grid-react';
-import { AllCommunityModule, ModuleRegistry } from 'ag-grid-community';
+import { AllCommunityModule, ModuleRegistry, ColDef } from 'ag-grid-community';
 import { useEffect, useState } from 'react';
 import CreateEmployeeModal from './CreateEmployeeModal';
 import axios from 'axios';
@@ -19,7 +19,7 @@ const Employee = () => {
         console.log("response", employeeList);
     }, [])
 
-    const columnDefs = [
+    const columnDefs: ColDef[] = [
         { field: 'id' },
         { field: 'firstName' },
         { field: 'lastName' },

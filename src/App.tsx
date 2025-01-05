@@ -1,7 +1,5 @@
 import './App.css'
 import Employee from './Components/Employee'
-import CreateEmployeeModal from './Components/Employee/CreateEmployeeModal'
-// import Test from "./Components/Employee/Test"
 
 function App() {
 

@@ -1,7 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import {
     createEmployee,
-    fetchEmployeeList
 } from '../Api/EmployeeApi';
 
 const initialState = {
